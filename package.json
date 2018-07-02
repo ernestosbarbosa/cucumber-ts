@@ -1,0 +1,32 @@
+{
+  "name": "cucumberjs-jest",
+  "version": "1.0.0",
+  "description": "Cucumber + Jest sample",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "gulp build && tsc",
+    "test": "cucumber-js ./dist/test/features --require ./dist/src/page-objects --require ./dist/src/support --require ./dist/test/steps"
+  },
+  "keywords": [
+    "jest",
+    "cucumber"
+  ],
+  "author": "jose.barbosa",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "chromedriver": "^2.40.0",
+    "cucumber": "^4.2.1",
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "ts-node": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/chromedriver": "^2.38.0",
+    "@types/cucumber": "^4.0.4",
+    "@types/selenium-webdriver": "^3.0.10",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^2.0.1"
+  }
+}
